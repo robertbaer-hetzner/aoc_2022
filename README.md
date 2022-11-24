@@ -8,8 +8,6 @@ This year I will try my best in Javascript.
 
 How to execute the file:
      
-     - Install Node.js: "sudo apt install nodejs npm"
-     
-     - Run script with: "node <Filename>"
+     - open the index.html on your webbrowser
   
   Have Fun! 
