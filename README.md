@@ -9,6 +9,7 @@ This year I will try my best in Javascript.
 How to execute the file:
      
       1. open the index.html on your webbrowser
+      or
       2. visit baerco.de/AOC2022
   
   Have Fun! 
