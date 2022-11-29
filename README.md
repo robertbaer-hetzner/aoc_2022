@@ -12,6 +12,6 @@ How to execute the file:
 
       or
       
-      2. visit baerco.de/AOC2022
+      2. visit baerco.click/AOC2022
   
   Have Fun! 
