@@ -12,6 +12,6 @@ How to execute the file:
 
       or
       
-      2. visit baerco.click/AOC2022
+      2. visit https://baerco.click/Day_<Number>/index.html
   
   Have Fun! 
