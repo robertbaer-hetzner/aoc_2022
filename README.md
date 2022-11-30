@@ -13,5 +13,9 @@ How to execute the file:
       or
       
       2. visit https://baerco.click/Day_<Number>/index.html
+
+      or 
+
+      3. visit https://baerco.click and select the desired Day an Part
   
   Have Fun! 
