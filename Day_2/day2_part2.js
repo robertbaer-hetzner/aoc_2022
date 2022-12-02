@@ -2,17 +2,47 @@ var items = [];
 var points2 = 0;
 
 function strategyGuide2(turn){
-  if (turn[1] == "X" && turn[0] == "A"){points2 = points2 + 3; }
-  if (turn[1] == "X" && turn[0] == "B"){points2 = points2 + 1; }
-  if (turn[1] == "X" && turn[0] == "C"){points2 = points2 + 2; }
+  if (turn[1] == "X") {
+    switch(turn[0]){
+      case "A": 
+        points2 = points2 + 3;
+        break;
+      case "B": 
+        points2 = points2 + 1;
+        break;
+      case "C": 
+        points2 = points2 + 2;
+        break;
+    }
+  }
   
-  if (turn[1] == "Y" && turn[0] == "A"){points2 = points2 + 4; }
-  if (turn[1] == "Y" && turn[0] == "B"){points2 = points2 + 5; }
-  if (turn[1] == "Y" && turn[0] == "C"){points2 = points2 + 6; }
+  if (turn[1] == "Y") {
+    switch(turn[0]){
+      case "A": 
+        points2 = points2 + 4;
+        break;
+      case "B": 
+        points2 = points2 + 5;
+        break;
+      case "C": 
+        points2 = points2 + 6;
+        break;
+    }
+  }
 
-  if (turn[1] == "Z" && turn[0] == "A"){points2 = points2 + 8; }
-  if (turn[1] == "Z" && turn[0] == "B"){points2 = points2 + 9; }
-  if (turn[1] == "Z" && turn[0] == "C"){points2 = points2 + 7; } 
+  if (turn[1] == "Z") {
+    switch(turn[0]){
+      case "A": 
+        points2 = points2 + 8;
+        break;
+      case "B": 
+        points2 = points2 + 9;
+        break;
+      case "C": 
+        points2 = points2 + 7;
+        break;
+    }
+  }
 }
 
 function buildarray2() {

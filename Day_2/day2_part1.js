@@ -2,18 +2,51 @@ var items = [];
 var points = 0;
 
 function strategyGuide1(turn) {
-  if (turn[0] == "A" && turn[1] == "X"){points = points + 4; }
-  if (turn[0] == "A" && turn[1] == "Y"){points = points + 8; }
-  if (turn[0] == "A" && turn[1] == "Z"){points = points + 3; }
-  
-  if (turn[0] == "B" && turn[1] == "X"){points = points + 1; }
-  if (turn[0] == "B" && turn[1] == "Y"){points = points + 5; }
-  if (turn[0] == "B" && turn[1] == "Z"){points = points + 9; }
 
-  if (turn[0] == "C" && turn[1] == "X"){points = points + 7; }
-  if (turn[0] == "C" && turn[1] == "Y"){points = points + 2; }
-  if (turn[0] == "C" && turn[1] == "Z"){points = points + 6; }
-};
+  if (turn[0] == "A") {
+    switch(turn[1]){
+      case "X": 
+        points = points + 4;
+        break;
+      case "Y": 
+        points = points + 8;
+        break;
+      case "Z": 
+        points = points + 3;
+        break;
+    }
+  }
+  
+  if (turn[0] == "B") {
+    switch(turn[1]){
+      case "X": 
+        points = points + 1;
+        break;
+      case "Y": 
+        points = points + 5;
+        break;
+      case "Z": 
+        points = points + 9;
+        break;
+    }
+  }
+
+  if (turn[0] == "C") {
+    switch(turn[1]){
+      case "X": 
+        points = points + 7;
+        break;
+      case "Y": 
+        points = points + 2;
+        break;
+      case "Z": 
+        points = points + 6;
+        break;
+    }
+  }
+}
+
+
 
 function buildarray() {
     boxvalue = document.getElementById('box').value;
