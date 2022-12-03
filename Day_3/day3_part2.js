@@ -4,10 +4,6 @@ resultarray2 = [];
 function compareStrings2(string1,string2,string3){
   let resultarray2 = [];
   let resultarray = [];
-   string1 = string1.split('');
-   string2 = string2.split(''); 
-   string3 = string3.split(''); 
-
   let comparer = 0;
   if (string2.length >= string1.length){comparer = string2.length;}
   else {comparer = string1.length;}

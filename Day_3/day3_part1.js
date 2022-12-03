@@ -9,12 +9,9 @@ function splitMiddle(str){
 
 function compareStrings(string){
   let resultarray = [];
-  let string1 = string[0].split('');
-  let string2 = string[1].split('');
-
   for( i=0; i<string[0].length; i++) {
     for( j=0; j<string[0].length; j++) {
-      if (string1[i] == string2[j]) { if (!(resultarray.includes(string2[j]))){resultarray.push(string2[j])};};}
+      if (string[0][i] == string[1][j]) { if (!(resultarray.includes(string[1][j]))){resultarray.push(string[1][j])};};}
   }
   resultarray.map(getPriorities);
 }
