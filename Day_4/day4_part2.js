@@ -1,8 +1,6 @@
-items2 = [];
 
-function buildarray2() {
-  boxvalue = document.getElementById('box').value;
-  items2.push(boxvalue);  
-  items2 = items2.toString().split(/\r?\n/);
+function part2() {
+  let arrayPart2 = buildarray(); 
+  document.getElementById("box2").innerHTML += "Result Part 2 "+ "\n\n";
   return false;
   }
