@@ -7,7 +7,7 @@ function buildarray(items){
     return items;
 }
 
-function range(size, startAt = 0) {
+function range(size, startAt) {
     return [...Array(size).keys()].map(i => i + startAt);
 }
 
