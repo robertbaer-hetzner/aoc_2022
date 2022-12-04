@@ -12,10 +12,10 @@ How to execute the file:
 
       or
       
-      2. visit https://baerco.click/Day_<Number>/index.html (Updates each day at 18:00 CET)
+      2. visit https://baerco.click/Day_<Number>/index.html (Updates each day at 19:00 CET)
 
       or 
 
-      3. visit https://baerco.click and select the desired Day an Part (Updates each day at 18:00 CET)
+      3. visit https://baerco.click and select the desired Day an Part (Updates each day at 19:00 CET)
   
   Have Fun! 
