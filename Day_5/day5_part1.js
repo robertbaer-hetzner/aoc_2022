@@ -55,13 +55,15 @@ function buildarrayForCrates(crates){
         movescorrect[i] = movescorrect[i].split(' ');
         if (i == (movescorrect.length -1)) {movescorrect[i] = movescorrect[i].filter(n => n);}
     }
+
+    //PART1 Difference 
     for (let i = 0; i < movescorrect.length; i += 1){
         for (let x = 0; x < movescorrect[i][0]; x += 1){
             sortedcrates[parseInt(movescorrect[i][2])-1].push(sortedcrates[parseInt(movescorrect[i][1])-1].at(-1));
             sortedcrates[parseInt(movescorrect[i][1])-1].pop();
          }
     }
-
+    
     // get solve String
     for (let i = 0; i < sortedcrates.length; i += 1){solve.push(sortedcrates[i].at(-1));}
     return solve;
