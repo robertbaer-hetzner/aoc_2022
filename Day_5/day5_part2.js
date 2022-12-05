@@ -1,11 +1,3 @@
-function splitMulti2(str, tokens){
-  var tempChar = tokens[0]; 
-  for(var i = 1; i < tokens.length; i++){
-      str = str.split(tokens[i]).join(tempChar);
-  }
-  str = str.split(tempChar);
-  return str;
-}
 
 function buildarrayForCrates2(crates){
   input = [];
@@ -29,7 +21,7 @@ function buildarrayForCrates2(crates){
       crates.pop();
       rotator++;
   }
-  for (var i = 0, charsLength = sortedcrates.length; i < charsLength; i += 1){sortedcrates[i] = sortedcrates[i].split(' ').join('');sortedcrates[i] = splitMulti2(sortedcrates[i], ['[', ']']).filter(n => n);}
+  for (var i = 0, charsLength = sortedcrates.length; i < charsLength; i += 1){sortedcrates[i] = sortedcrates[i].split(' ').join('');sortedcrates[i] = splitMulti(sortedcrates[i], ['[', ']']).filter(n => n);}
   sortedcrates.reverse();
 
   // creating Array for the moves ['MovexFromyToZ']
@@ -47,6 +39,7 @@ function buildarrayForCrates2(crates){
       movescorrect[i] = movescorrect[i].split(' ');
       if (i == (movescorrect.length -1)) {movescorrect[i] = movescorrect[i].filter(n => n);}
   }
+  //PART1 Difference 
   for (let i = 0; i < movescorrect.length; i += 1){
           let movingcrates = sortedcrates[parseInt(movescorrect[i][1])-1].slice(-parseInt(movescorrect[i][0]));
           sortedcrates[parseInt(movescorrect[i][2])-1] = sortedcrates[parseInt(movescorrect[i][2])-1].concat(movingcrates);
