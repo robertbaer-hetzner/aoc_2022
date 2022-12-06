@@ -15,11 +15,16 @@ function uniqueCharacters(str)
     return true;
 }
 
+function getFirstMarker(array,number){
+    let marker = 0;
+    for (let i = 0; i < (array.length-3); i += 1) { if (uniqueCharacters(array.slice(i,i+number).join('')) == true){ marker = i+number; break; } }
+    return marker;
+}
+
 function part1() {
     
     let arrayPart1 = buildarray();
-    let firstmarker = 0;
-    for (let i = 0; i < (arrayPart1.length-3); i += 1) { if (uniqueCharacters(arrayPart1.slice(i,i+4).join('')) == true){ firstmarker = i+4; break; } }
+    let firstmarker = getFirstMarker(arrayPart1,4);
     document.getElementById("box2").innerHTML += "Result Part 1:  " + firstmarker + "\n\n";
     return false;
   }
