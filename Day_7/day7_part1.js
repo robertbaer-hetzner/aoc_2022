@@ -1,4 +1,3 @@
-let overlaps = 0; 
 function buildarray(items){
     items = [];
     boxvalue = document.getElementById('box').value;
