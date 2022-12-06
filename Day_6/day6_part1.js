@@ -18,13 +18,8 @@ function uniqueCharacters(str)
 function part1() {
     
     let arrayPart1 = buildarray();
-
-    firstmarker = 0;
-    for (let i = 0; i < (arrayPart1.length-3); i += 1){
-        slidingWindow = arrayPart1[i] + arrayPart1[i+1] + arrayPart1[i+2] + arrayPart1[i+3];
-        if (uniqueCharacters(slidingWindow) == true){firstmarker = i+4; break;}
-    }
-
+    let firstmarker = 0;
+    for (let i = 0; i < (arrayPart1.length-3); i += 1) { if (uniqueCharacters(arrayPart1.slice(i,i+4).join('')) == true){ firstmarker = i+4; break; } }
     document.getElementById("box2").innerHTML += "Result Part 1:  " + firstmarker + "\n\n";
     return false;
   }
